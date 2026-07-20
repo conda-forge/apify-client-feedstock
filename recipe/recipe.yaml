@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: python -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -27,6 +27,7 @@ requirements:
     - more-itertools >=10.0.0
     - pydantic >=2.11.0
     - email-validator
+    - brotli-python >=1.0.9
 
 tests:
   - python:
