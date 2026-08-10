@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - hatchling
+    - uv-build
   run:
     - python >=${{ python_min }}
     - colorama >=0.4.0
