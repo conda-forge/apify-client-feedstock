@@ -1,5 +1,5 @@
 context:
-  version: "3.1.0"
+  version: "3.1.1"
   python_min: "3.11"
 
 package:
@@ -8,18 +8,18 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/apify-client/apify_client-${{ version }}.tar.gz
-  sha256: 08c2b31f7f74a36ab2abc6235bb118bb4d522a84e65a3f0b75c452c4872aa4fe
+  sha256: 6bfcae5f4f2f22b39b8fe0ad9560fbc93d6a652bf06c4cc008abdfc351b83d6c
 
 build:
   noarch: python
   script: python -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - hatchling
+    - uv-build
   run:
     - python >=${{ python_min }}
     - colorama >=0.4.0
