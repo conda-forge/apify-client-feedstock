@@ -1,5 +1,5 @@
 context:
-  version: "3.3.0"
+  version: "3.4.0"
   python_min: "3.11"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/apify-client/apify_client-${{ version }}.tar.gz
-  sha256: 4adb1d2d424ceb72f7382bd51b9372a687e5cc1ea54f1bc252228e0eb9316687
+  sha256: bd4dac482afd02801eb9a90ab570d82ee86d7ee8d479f72723ca1aedc5411f27
 
 build:
   noarch: python
